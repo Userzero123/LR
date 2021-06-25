@@ -1,0 +1,116 @@
+body {
+	background-color: white;
+}
+.grid {
+	background-color: white;
+	margin: 0px 0px 15px 0px;
+}
+.grid__block {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 200px;
+}
+.grid__items {
+	text-align: center;
+	margin: 0 15px 30px;
+	border: 5px green;
+}
+.grid__items img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.grid__blocks {
+	display: grid;
+	grid-template-columns: 50% 50% 50% 50%;
+	grid-template-rows: 200px;
+}
+.grid__subblock {
+	text-align: center;
+	margin: 0 15px;
+	border: 2px green;
+}
+.grid__subblock img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.grid__body {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+}
+.grid__item {
+	text-align: center;
+	border: 2px green;
+	padding: 30px;
+	margin: 15px 15px;
+}
+.grid__body1 {
+	margin: 100px 0px 0px 0px;
+	display: grid;
+	grid-template-columns: 200px minmax(150px, 1fr) 200px;
+	grid-template-rows: 1fr 1fr;
+}
+.grid__item1 {
+	text-align: center;
+	border: 2px dashed red;
+	padding: 30px;
+	margin: 15px 15px;
+}
+.grid__wrapper {
+	display: grid;
+	grid-template:
+		[start] "header header" 100px [row2]
+		[row2] "side content" 1fr [row-end] / 150px 1fr;
+	/* grid-template-columns: 150px 1fr; */
+	/* grid-template-rows: 100px 1fr; */
+	/* grid-template-areas: */
+	/* "header header" */
+	/* "side content"; */
+}
+.grid__header {
+	border: 2px dashed red;
+	padding: 30px;
+	margin: 0px 15px 15px 15px;
+	grid-area: header;
+}
+.grid__side {
+	border: 2px dashed red;
+	padding: 30px;
+	margin: 0px 0px 15px 15px;
+	grid-area: side;
+}
+.grid__area {
+	border: 2px dashed red;
+	padding: 30px;
+	margin: 0px 15px 15px 15px;
+	grid-area: content;
+}
+
+.grid__wrapper1 {
+	margin: 100px 0px 0px 0px;
+	display: grid;
+	grid-template: 100px 1fr / 150px 1fr;
+	grid-template-areas:
+		"header header"
+		"side content";
+}
+.grid__header1 {
+	border: 2px dashed red;
+	padding: 30px;
+	margin: 0px 15px 15px 15px;
+	grid-area: header;
+}
+.grid__side1 {
+	border: 2px dashed red;
+	padding: 30px;
+	margin: 0px 0px 15px 15px;
+	grid-area: side;
+}
+.grid__area1 {
+	border: 2px dashed red;
+	padding: 30px;
+	margin: 0px 15px 15px 15px;
+	grid-area: content;
+}
